@@ -1,6 +1,6 @@
 # ICT-COG
 
-ICT-COG 이더리움 과정(40 시간) 
+ICT COG Academy 이더리움 과정(40 시간) 
 
 * [퍼블릭 블록체인에 대한 이해](http://bit.ly/2Vv390B)
 * [이더리움 소개](http://bit.ly/30JcjF2)
