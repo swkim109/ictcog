@@ -22,3 +22,6 @@ signer.getTransactionCount().then((n) => {
     
     wallet.signTransaction(tx).then((rawTx) => console.log(rawTx));
 });
+
+
+

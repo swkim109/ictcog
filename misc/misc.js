@@ -16,8 +16,9 @@ const params = web3.eth.abi.encodeFunctionCall(
     []
 );
 
+
 console.log(params);
 
 
-const result = web3.eth.abi.decodeParameter("string", "");
-console.log(result);
+//const result = web3.eth.abi.decodeParameter("string", "");
+//console.log(result);
