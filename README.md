@@ -10,7 +10,7 @@ ICT COG Academy 이더리움 과정(40 시간)
 * [이더리움 API 서비스](https://bit.ly/2QMIJ1O)
 * [스마트 컨트랙트 실습 - Solidity(1)](https://bit.ly/3ibyj7l)
 * [스마트 컨트랙트 실습 - Solidity(2)](https://bit.ly/34lk07Y)
-* 이더리움 기반 심플 Dapp 개발 실습(1)
-* 이더리움 기반 심플 Dapp 개발 실습(2)
+* 이더리움 기반 Dapp 개발 실습(1)
+* 이더리움 기반 Dapp 개발 실습(2)
 
 
