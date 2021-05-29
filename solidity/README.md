@@ -52,3 +52,10 @@
   `try-catch`-`Panic(uint256)`  
 
 
+- 14_MyContract.sol  
+  이벤트 예제, 이더 전송 후 보낸 계정과 수량을 로그에 남긴다.  
+
+
+- 15_MyContract.sol  
+  상속 예제 
+
