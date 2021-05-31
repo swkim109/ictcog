@@ -5,7 +5,7 @@
 
 
 - 02_MyContract.sol  
-  `unit256` 타입과 `address` 타입
+  `uint256` 타입과 `address` 타입
 
 
 - 03_MyContract.sol  
