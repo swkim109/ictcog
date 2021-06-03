@@ -25,8 +25,21 @@
    ```shell
    .\geth-run
    ```   
+   
+5. 다음과 같은 오류가 나는 경우에는 실행권한을 주어야 합니다(관리자 파워쉘에서 실행).
 
-5. Geth 콘솔에 연결합니다.
+   ```shell
+   + .\geth-run
+   + ~~~~~~~~~~
+       + CategoryInfo          : 보안 오류: (:) [], PSSecurityException
+       + FullyQualifiedErrorId : UnauthorizedAccess
+   ```
+   
+   ```shell
+   Set-ExecutionPolicy -ExecutionPolicy unrestricted -Scope CurrentUser
+   ```
+
+6. Geth 콘솔에 연결하려면 다음을 입력합니다.
 
    ```shell
    geth attach ipc:$env:ETHEREUM_SOCKET
