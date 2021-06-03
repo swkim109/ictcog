@@ -3,7 +3,7 @@
 1. [다운로드](https://geth.ethereum.org/downloads/) 페이지에서 운영체제에 맞는 파일을 받은 후 설치합니다.
 
 2. Windows 10 의 경우는 설치된 후에는 경로에 Geth 실행 경로가 자동으로 설정되므로 파워쉘을 열어서 다음과 같이 확인합니다.
-   ```shell
+   ```
    > geth version
    Geth
    Version: 1.10.3-stable
@@ -28,7 +28,7 @@
    
 5. 다음과 같은 오류가 나는 경우에는 실행권한을 주어야 합니다(관리자 파워쉘에서 실행).
 
-   ```shell
+   ```
    + .\geth-run
    + ~~~~~~~~~~
        + CategoryInfo          : 보안 오류: (:) [], PSSecurityException
