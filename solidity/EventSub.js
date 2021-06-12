@@ -1,12 +1,12 @@
-const provider = 'wss://rinkeby.infura.io/ws/v3/...';
-const contract = '0xd3F30D1b6a173112aC231b52ed0a66Fd50FCA49b';
+const provider = 'wss://';
+const contract = '0xB5f33FF21488B9df6f1F808A173b88F4F2Db0699';
 
 const callback = (log) => {
     
     const result = web3.eth.abi.decodeLog(
-        [{type: 'address', name: '_from'}, {type: 'uint256', name: '_value', indexed: true}],
+        [{type: 'address', name: '_from'}, {type: 'uint256', name: '_value'}],
         log.data,
-        [log.topics[1]]
+        []
     );
     
     console.log(`FROM=${result._from}, VALUE=${result._value}`);
