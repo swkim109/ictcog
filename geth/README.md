@@ -1,4 +1,4 @@
-# Geth 실행(Windows 10)
+## Geth 실행(Windows 10)
 
 1. [다운로드](https://geth.ethereum.org/downloads/) 페이지에서 운영체제에 맞는 파일을 받은 후 설치합니다.
 
@@ -48,7 +48,7 @@
    geth attach ipc:$env:ETHEREUM_SOCKET
    ```
 
-# Geth 자바스크립트 콘솔
+## Geth 자바스크립트 콘솔
 
 자바스크립트 콘솔에서는 이더리움의 자바스크립트 라이브러리인 web3.js를 사용할 수 있습니다(하지만 Geth 콘솔에서 제공하는 web3.js는 매우 
 오래된 버전이므로 현재 web3.js 공식 문서와는 차이가 있을 수 있습니다).
