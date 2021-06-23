@@ -89,7 +89,6 @@
    eth.getBalance(eth.accounts[0])
    ```
 
-
 6. 보상 계정 조회
    ```
    eth.coinbase
@@ -106,27 +105,29 @@
    miner.stop()
    ```
 
-9. 송금 하기  
+트랜잭션(상태 변경) 테스트
+
+1. 송금 하기  
    `value` 단위는 wei
    트랜잭션을 보내려면 `from` 계정의 지갑을 열어야 합니다.
    ```
    eth.sendTransaction({from: "0x5374c16f83b1425c38e0cd016e77885b68f18bee", to: "0x547d73355A851079E0395aDB2C647821b74C7eAF", value: 1000000})
    ```
 
-10. 지갑 열기  
+2. 지갑 열기  
 
    ```
    personal.unlockAccount("0x5374c16f83b1425c38e0cd016e77885b68f18bee")
    ```
 
-11. 트랜잭션 정보 확인  
+3. 트랜잭션 정보 확인  
 
    파라미터는 트랜잭션 해쉬값
    ```
    eth.getTransaction("0x98bf1253f36a7dbed16ecbc0a75c688f6927d5154b4921a9b25f9c0ec4524eff")
    ```
 
-12. 영수증(Receipt) 정보 확인  
+4. 영수증(Receipt) 정보 확인  
 
    파라미터는 트랜잭션 해쉬값
 
@@ -134,7 +135,7 @@
    eth.getTransactionReceipt("0x98bf1253f36a7dbed16ecbc0a75c688f6927d5154b4921a9b25f9c0ec4524eff")
    ```
 
-13. 블록 정보 확인
+5. 블록 정보 확인
    
    ```
    eth.getBlockByNumber(13)
