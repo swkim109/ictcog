@@ -114,18 +114,22 @@
    ```
 
 10. 지갑 열기  
+
    ```
    personal.unlockAccount("0x5374c16f83b1425c38e0cd016e77885b68f18bee")
    ```
 
 11. 트랜잭션 정보 확인  
+
    파라미터는 트랜잭션 해쉬값
    ```
    eth.getTransaction("0x98bf1253f36a7dbed16ecbc0a75c688f6927d5154b4921a9b25f9c0ec4524eff")
    ```
 
 12. 영수증(Receipt) 정보 확인  
+
    파라미터는 트랜잭션 해쉬값
+
    ```
    eth.getTransactionReceipt("0x98bf1253f36a7dbed16ecbc0a75c688f6927d5154b4921a9b25f9c0ec4524eff")
    ```
