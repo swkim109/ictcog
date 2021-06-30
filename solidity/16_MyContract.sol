@@ -7,7 +7,7 @@ contract MyContract {
 
     using ECDSA for bytes32;
 
-    function verifyMessage(bytes32 message, bytes memory signature) public pure returns (address) {
+    function verifyMessage(bytes32 messageHash, bytes memory signature) public pure returns (address) {
         return message.recover(signature);
     }
 
