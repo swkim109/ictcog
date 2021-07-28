@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import {Container, Row, Col, InputGroup, FormControl, ButtonGroup, Button, Card} from "react-bootstrap";
-import Loader from "react-loader-spinner";
 import { isNaN } from "lodash";
 
 import Web3 from "web3";
@@ -29,7 +28,7 @@ function DApp() {
     const [val, setVal] = useState(0);
     /////
     
-
+    
     //1.
     const handleConnect = async () => {
         
@@ -61,6 +60,7 @@ function DApp() {
     //4.
     const handleChange = (e) => {
         console.log(e.target.value);
+        setVal(parseInt(e.target.value));
     }
     /////
     
@@ -107,20 +107,11 @@ function DApp() {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div>
-                        <Spinner isLoading={false}/>
-                    </div>
+                
                 </Col>
             </Row>
         </Container>
     );
-}
-
-
-const Spinner = (props) => {
-    return (
-        props.isLoading?<Loader type="Grid" color="#CE62D4" height="24" width="24"/>:null
-    )
 }
 
 export default DApp;

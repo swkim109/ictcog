@@ -6,10 +6,13 @@ describe ("SimpleStorage", function () {
     before(async () => {
         const f = await hre.ethers.getContractFactory("SimpleStorage");
         this.instance = await f.deploy();
+        //this.accounts = await ethers.getSigners();
     });
     
     
     it("should change the value", async () => {
+       
+        //console.log(this.accounts[0].address);
        
         const tx = await this.instance.set(5000);
         const v  = await this.instance.get();

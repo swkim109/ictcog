@@ -1,4 +1,4 @@
-/* In Remix */
+/* Remix */
 /* eth_call 에 사용 */
 const n = web3.utils.hexToNumberString("0x1a0");
 console.log(n);

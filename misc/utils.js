@@ -1,4 +1,4 @@
-const v = web3.utils.hexToNumberString("0xde0b6b3a7640000");
+const v = web3.utils.hexToNumberString("0x18de76816d8000");
 //const eth = web3.utils.fromWei(v, "ether");
 console.log(v);
 

@@ -11,6 +11,7 @@ signer.getTransactionCount().then((n) => {
     console.log(n);
     const wallet = new ethers.Wallet(privateKey);
     
+    // 다음 값들은 모두 필수이다.
     const tx = {
         nonce: ethers.utils.hexlify(n),
         from: fromAddr,
@@ -18,7 +19,7 @@ signer.getTransactionCount().then((n) => {
         value: ethers.utils.parseEther("0.001"),
         gasLimit: ethers.utils.hexlify(3000000),
         gasPrice: ethers.utils.hexlify(20e9), // 20 Gwei
-        chainId: 1
+        //chainId: 1
     }
     
     wallet.signTransaction(tx).then((rawTx) => console.log(rawTx));

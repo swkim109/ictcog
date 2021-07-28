@@ -21,8 +21,6 @@ contract MyContract {
     }
 }
 
-
-
 interface HelloWorld {
     function set(string memory _s) external;
 }
