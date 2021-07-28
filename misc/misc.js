@@ -25,7 +25,7 @@ console.log(params);
 
 /* 자바스크립트로 서명한 데이터를 컨트랙트에서 검증하기
 
-const privateKey = "409988a9e7e9097e5a42cb4b273e193958130f8e6a6cf7737307fc4ac5958899";
+const privateKey = "";
 const data = web3.utils.utf8ToHex("This is a secret message!");
 const signedMessage = web3.eth.accounts.sign(data, privateKey);
 console.log(signedMessage);
