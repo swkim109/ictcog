@@ -1,35 +1,28 @@
 const SimpleStorage = artifacts.require("SimpleStorage");
 
-const {
-    BN,
-    expectEvent,  // Assertions for emitted events
-    expectRevert, // Assertions for transactions that should fail
-} = require('@openzeppelin/test-helpers');
-
-
 contract ("SimpleStorage", function () {
     
-    before( async () => {
+    before(async () => {
         this.instance = await SimpleStorage.deployed();
     });
     
-    it ('should be failed if the value exceeds the limit', async () => {
-        await expectRevert(this.instance.set(20000), "Should be less than 10000");
-    });
-    
     it ("should change the value", async () => {
         const receipt = await this.instance.set(5000);
-        //console.log(receipt);
         const val  = await this.instance.get();
         assert.equal(5000, val, "The value is incorrect");
-        
     });
     
-    it ("should change the value", async () => {
-        const receipt = await this.instance.set(5000);
-        //console.log(receipt);
-        expectEvent(receipt, 'Change', {message: 'set', newVal: new BN(5000) });
-    });
+    it.skip ('should revert when the value exceeds the limit', async () => {
     
+        await this.instance.set(20000)
+            .catch((error) => {
+                const expectedRevertReason = "Reason given: Should be less than 10000.";
+                //TODO
+                // error.message 에서 expectedRevertReason을 추출하여 v에 넣고 비교한다.
+                // indexOf와 substring을 이용한다.
+                const v = "";
+                expect(v).to.equal(expectedRevertReason);
+            });
+    });
     
 })
