@@ -9,11 +9,8 @@ describe ("SimpleStorage", function () {
         //this.accounts = await ethers.getSigners();
     });
     
-    
     it("should change the value", async () => {
-       
         //console.log(this.accounts[0].address);
-       
         const tx = await this.instance.set(5000);
         const v  = await this.instance.get();
         assert.equal(v, 5000);
@@ -32,7 +29,6 @@ describe ("SimpleStorage", function () {
     it("should revert", async () => {
         await expect(this.instance.set(20000))
             .to.be.revertedWith("Should be less than 10000");
-        
     });
     
 })
