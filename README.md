@@ -1,5 +1,6 @@
 # ICT-COG
 
+한국 디지털 융합 진흥원  
 ICT COG Academy 이더리움 과정(40 시간) 
 
 * [퍼블릭 블록체인에 대한 이해](https://bit.ly/2SewknO)
