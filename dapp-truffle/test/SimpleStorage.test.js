@@ -8,7 +8,7 @@ contract ("SimpleStorage", function () {
     
     it ("should change the value", async () => {
         const receipt = await this.instance.set(5000);
-        const val  = await this.instance.get();
+        const val  = await this.instance.get.call();
         assert.equal(5000, val, "The value is incorrect");
     });
     
