@@ -1,7 +1,7 @@
 const ethers = require("ethers");
 
 const privateKey = "";
-const jsonRpcProvider = new ethers.providers.JsonRpcProvider("https://eth-rinkeby.alchemyapi.io/v2/n6XQhLyGF6RW6EQRdCEuQTkOvcrbS3ik");
+const jsonRpcProvider = new ethers.providers.JsonRpcProvider("https://eth-rinkeby.alchemyapi.io/v2/");
 const fromAddr = "0x547d73355A851079E0395aDB2C647821b74C7eAF";
 const toAddr = "0xafc4f9f3ba806dd2f8e47a524ffda2418bbfc08a";
 
