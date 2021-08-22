@@ -1,6 +1,8 @@
 //ethers.js
 const ethers = require("ethers");
 
+
+//
 const text = "This is a secret message!";
 const privateKey = "5de6abc8439867acc2d5cf7fa9d5f0e8ebce2222b643926704ecca1641b5fd9f";
 

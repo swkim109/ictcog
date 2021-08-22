@@ -2,7 +2,9 @@ const ethers = require("ethers");
 
 const text = "Hello, World!";
 const hexString = ethers.utils.toUtf8Bytes(text);
-const textHash = ethers.utils.keccak256(hexString);
+//const textHash = ethers.utils.keccak256(hexString);
+
+const textHash = web3.utils.keccak256(test);
 
 console.log(textHash);
 
