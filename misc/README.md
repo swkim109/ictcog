@@ -1,5 +1,7 @@
-## Javascript help
+## Javascript helper
 
+- 리믹스에서 자바스크립트 실행
+  
 - hash.js  
   ethers.js, web3.js, Solidity 에서의 해쉬 함수 사용 비교
 
